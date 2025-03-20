@@ -12,3 +12,8 @@ variable "region" {
   description = "Deploy region"
   type        = string
 }
+
+variable "db_password" {
+  description = "SQL DB Password"
+  type        = string
+}

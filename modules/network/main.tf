@@ -18,7 +18,7 @@ resource "google_compute_firewall" "default-allow-http" {
 
   allow {
     protocol = "tcp"
-    ports    = ["80"]
+    ports    = ["80,", "443"]
   }
   source_ranges = ["0.0.0.0/0"]
   target_tags   = ["https-server"]
